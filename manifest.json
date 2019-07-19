@@ -1,0 +1,26 @@
+  {
+    "name": "Click on all buttons in selector list",
+    "version": "1.0",
+    "description": "Clicks on a list of buttons and closes new tabs which were opened as a result of a button click.",
+    "manifest_version": 2,
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
+    "page_action": {
+      "default_popup": "index.html"
+    },
+    "permissions": [
+      "activeTab",
+      "tabs",
+      "declarativeContent",
+      "storage",
+      "webNavigation"
+    ]
+}

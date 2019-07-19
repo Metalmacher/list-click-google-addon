@@ -1,0 +1,9 @@
+{
+    "typeAcquisition": {
+        "include": ["chrome"]
+    },
+    "compilerOptions": {
+        "target": "es2015"
+    }
+}
+
